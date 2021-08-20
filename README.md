@@ -3,14 +3,14 @@ A simple python module to print a stright line, in the way that it does the matp
 
 Until now there is only a function  `line()` where we have different imputs:
 
-* **`slope=`** The slope of the line. By default in *degrees* but it culd be im
+* **`slope=`** (needed) The slope of the line. By default in *degrees* but it culd be im
 
-* **`intercept=`** The y intercept value of the line.
+* **`intercept=`** (needed) The y intercept value of the line.
 
-* **`ax=`** The ax object of matplotlib where we are plotting the line i.e. `fig, ax = plt.subplots()`
+* **`ax=`** (needed) The ax object of matplotlib where we are plotting the line i.e. `fig, ax = plt.subplots()`
 
-* **`xdisplacement`** If we want to displace the line in the $x$ axe
+* **`xdisplacement`** If we want to displace the line in the x axe
 
-* **`slope`**
+* **`mode`** Mode of slope input. By default is `'degree'`, could be changed by `'radian'` or `'slope'`
 
-* **`slope`**
+* **`color`** The color of the line
