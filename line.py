@@ -16,7 +16,7 @@ def line(slope,              #slope by default in degrees
         m=np.tan(slope*np.pi/180)
     elif mode=='radian':
         m=np.tan(slope)
-    elif mode=='radian':
+    elif mode=='slope':
         m=slope
     
     #get limits
@@ -41,5 +41,5 @@ def line(slope,              #slope by default in degrees
         limsx.append(left+xdisplacement)
     
     #creating a new colection
-    col = LineCollection([np.column_stack((limsx,limsy))], colors=color)
+    col = LineCollection([np.column_stack((limsx[:2],limsy[:2]))], colors=color,antialiased=True)
     ax.add_collection(col, autolim=False)
