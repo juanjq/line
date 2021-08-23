@@ -27,21 +27,15 @@ with httpimport.remote_repo(['line_plot'], 'https://gist.githubusercontent.com/j
 An example of use,
 
 ```
-import matplotlib.pyplot as plt
-import numpy as np
-
 fig, ax = plt.subplots()
 
+#other random plot
 x1 = np.linspace(-1,1,100)
 ax.plot(x1, np.sin(x1))
 
-
+#plot the line
 line.line(20,0.5,ax,xdisplacement=-0.6,color='darkblue',linestyle='--')
 
-
-
-plt.xlabel('x')
-plt.ylabel('y')
 plt.show() 
 ```
 
