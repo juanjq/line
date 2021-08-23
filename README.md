@@ -14,3 +14,33 @@ Until now there is only a function  `line()` where we have different inputs:
 * **`mode`** Mode of slope input. By default is `'degree'`, could be changed by `'radian'` or `'slope'`
 
 * **`color`** The color of the line
+
+
+For installing it you could do:
+
+```
+import httpimport
+with httpimport.remote_repo(['line_plot'], 'https://gist.githubusercontent.com/juanjq/e67a7cf6672f54fca77409cc0757f8a4/raw/5f5293b44a76ce5c9116e3b0e2ee2602fb127240'):
+     import line_plot as line
+```
+
+An example of use,
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig, ax = plt.subplots()
+
+x1 = np.linspace(-1,1,100)
+ax.plot(x1, np.sin(x1))
+
+
+line.line(20,0.5,ax,xdisplacement=-0.6,color='darkblue',linestyle='--')
+
+
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show() 
+```
