@@ -44,3 +44,5 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.show() 
 ```
+
+![alt text](https://github.com/juanjq/line_plot/blob/main/data/line.png?raw=true)
