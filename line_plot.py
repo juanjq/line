@@ -8,7 +8,8 @@ def line(slope,              #slope by default in degrees
          ax,                 #matplotlib axe where we are plotting
          xdisplacement=0,    # if we want to displace the line in the x coordinate
          mode='degree',      #mode to imput the slope('degree','radian','slope')
-         color='darkblue'    #color of the lina
+         color='darkblue',    #color of the line
+         linestyle='-'
             ):
     
     #getting slope    
@@ -41,5 +42,6 @@ def line(slope,              #slope by default in degrees
         limsx.append(left+xdisplacement)
     
     #creating a new colection
-    col = LineCollection([np.column_stack((limsx[:2],limsy[:2]))], colors=color,antialiased=True)
+    col = LineCollection([np.column_stack((limsx[:2],limsy[:2]))], colors=color,linestyle=linestyle,antialiased=True)
     ax.add_collection(col, autolim=False)
+
