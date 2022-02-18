@@ -16,7 +16,7 @@ Until now there is only a function  `line()` where we have different inputs:
 * **`color`** The color of the line
 
 
-For installing it you could do:
+For installing it you can do:
 
 ```
 import httpimport
