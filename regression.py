@@ -1,5 +1,6 @@
-import numpy as np
+import numpy             as np
 import matplotlib.pyplot as plt
+from   matplotlib.collections import LineCollection
 
 import httpimport
 with httpimport.remote_repo(['line'], 'https://raw.githubusercontent.com/juanjq/lines/main'):
