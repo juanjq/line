@@ -20,8 +20,8 @@ For installing it you can do:
 
 ```
 import httpimport
-with httpimport.remote_repo(['line_plot'], 'https://raw.githubusercontent.com/juanjq/line_plot/main'):
-     import line_plot as line
+with httpimport.remote_repo(['line'], 'https://raw.githubusercontent.com/juanjq/lines/main'):
+     import line
 ```
 
 An example of use,
