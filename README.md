@@ -20,7 +20,7 @@ For installing it you can do:
 
 ```
 import httpimport
-with httpimport.remote_repo(['line_plot'], 'https://gist.githubusercontent.com/juanjq/e67a7cf6672f54fca77409cc0757f8a4/raw/5f5293b44a76ce5c9116e3b0e2ee2602fb127240'):
+with httpimport.remote_repo(['line_plot'], 'https://raw.githubusercontent.com/juanjq/line_plot/main'):
      import line_plot as line
 ```
 
