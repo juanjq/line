@@ -47,8 +47,8 @@ Script for linear and plynomial regression simple graph plotting. For installing
 
 ```
 import httpimport
-with httpimport.remote_repo(['regression_plot'],'https://raw.githubusercontent.com/juanjq/regression_plot/main'):
-    import regression_plot as reg
+with httpimport.remote_repo(['regression'],'https://raw.githubusercontent.com/juanjq/lines/main'):
+    import regression as reg
 ```
 
 There are two classes `Linear` and `Polynomial` an there ara some examples of use,
